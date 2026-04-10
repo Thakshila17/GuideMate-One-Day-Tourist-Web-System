@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User - Reset Password</title>
+    <title>Admin - Reset Password</title>
     <link rel="stylesheet" href="{{ asset('css/reset-password.css') }}">
 </head>
 
@@ -15,18 +15,18 @@
             <h3>One-Day Tourist Guide System</h3>
         </div>
         <div class="login-card">
-            <h2>Reset Password - User</h2>
+            <h2>Reset Password - Admin</h2>
 
             @if(session('status'))
             <div class="success-box">{{ session('status') }}</div>
             @endif
 
-            <form method="POST" action="{{ route('user.password.update') }}">
+            <form method="POST" action="{{ route('admin.password.update') }}">
                 @csrf
 
-                <label>Username</label>
-                <input type="text" name="username" placeholder="Enter your username" value="{{ old('username') }}" required>
-                @error('username')
+                <label>Admin Name</label>
+                <input type="text" name="admin_name" placeholder="Enter your admin name" value="{{ old('admin_name') }}" required>
+                @error('admin_name')
                 <div class="field-error">{{ $message }}</div>
                 @enderror
 
@@ -57,8 +57,6 @@
         </div>
     </div>
     <script src="{{ asset('js/password-toggle.js') }}"></script>
-</body>
-</div>
 </body>
 
 </html>

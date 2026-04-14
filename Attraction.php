@@ -3,20 +3,27 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Category;
 
 class Attraction extends Model
 {
     protected $fillable = [
         'name',
         'image',
-        'category',
+        'category_id',
         'description',
-        'opening_hours',
-        'closing_hours',
-        'contact_info',
-        'entry_fee',
+        'location',
         'lat',
         'lng',
-        'location'
+        'opening_hours',
+        'closing_hours',
+        'entry_fee',
+        'contact_info',
+        'status'
     ];
+
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
 }

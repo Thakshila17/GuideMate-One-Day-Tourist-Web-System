@@ -10,24 +10,6 @@ use Illuminate\Support\Facades\Hash;
 
 class UserAuthController extends Controller
 {
-    // LOGIN
-    public function login(Request $request)
-    {
-        $credentials = $request->validate([
-            'email' => 'required|email',
-            'password' => 'required',
-        ]);
-
-        if (Auth::guard('web')->attempt($credentials)) {
-            $request->session()->regenerate();
-            return redirect()->intended('/user/dashboard');
-        }
-
-        return back()->withErrors([
-            'email' => 'Invalid credentials!',
-        ])->withInput();
-    }
-
     // REGISTER 
     public function register(Request $request)
     {

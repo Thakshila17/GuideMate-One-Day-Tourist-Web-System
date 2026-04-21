@@ -33,6 +33,22 @@ The system currently focuses on user authentication and dashboard management, wi
 
 ---
 
+## 📸 Screenshots  
+
+### 🔐 Login Page
+<img src="screenshots/login_page.png" width="600"/>
+
+### 👤 User Dashboard
+<img src="screenshots/user-dashboard.png" width="600"/>
+
+### 🛠 Admin Dashboard
+<img src="screenshots/admin-dashboard.png" width="600"/>
+
+### 📝 User Registration Page  
+<img src="screenshots/registration.png" width="600"/>
+
+---
+
 ## 📂 Project Structure  
 
 ### Models  
@@ -60,10 +76,10 @@ The system currently focuses on user authentication and dashboard management, wi
 ---
 
 ## 🛠 Technologies Used  
-- **Backend:** PHP (Laravel)  
 - **Frontend:** HTML, CSS, JavaScript, Bootstrap  
+- **Backend:** PHP (Laravel)  
 - **Database:** MySQL  
-
+- **Tools:** VS Code, XAMPP, OpenStreetMap, Leaflet
 ---
 
 ## 📊 Project Status  

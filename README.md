@@ -38,14 +38,14 @@ The system currently focuses on user authentication and dashboard management, wi
 ### 🔐 Login Page
 <img src="screenshots/login_page.png" width="600"/>
 
+### 📝 User Registration Page  
+<img src="screenshots/registration.png" width="600"/>
+
 ### 👤 User Dashboard
 <img src="screenshots/user-dashboard.png" width="600"/>
 
 ### 🛠 Admin Dashboard
 <img src="screenshots/admin-dashboard.png" width="600"/>
-
-### 📝 User Registration Page  
-<img src="screenshots/registration.png" width="600"/>
 
 ---
 

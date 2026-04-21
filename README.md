@@ -36,10 +36,10 @@ The system currently focuses on user authentication and dashboard management, wi
 ## 📸 Screenshots  
 
 ### 🔐 Login Page
-<img src="screenshots/login_page.png" width="600"/>
+<img src="screenshots/login-page.png" width="600"/>
 
 ### 📝 User Registration Page  
-<img src="screenshots/registration.png" width="600"/>
+<img src="screenshots/register-page.png" width="600"/>
 
 ### 👤 User Dashboard
 <img src="screenshots/user-dashboard.png" width="600"/>

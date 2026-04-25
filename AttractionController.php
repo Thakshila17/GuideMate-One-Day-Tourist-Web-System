@@ -9,9 +9,8 @@ use App\Models\Category;
 
 class AttractionController extends Controller
 {
-    /**
-     * SHOW ALL ATTRACTIONS
-     */
+    // SHOW ATTRACTIONS
+
     public function index(Request $request)
     {
         $query = Attraction::with('category')->latest();
@@ -27,9 +26,8 @@ class AttractionController extends Controller
         return view('admin.attractions.index', compact('attractions', 'categories'));
     }
 
-    /**
-     * STORE NEW ATTRACTION
-     */
+    // STORE NEW ATTRACTION
+
     public function store(Request $request)
     {
         $request->validate([
@@ -40,7 +38,6 @@ class AttractionController extends Controller
             'image' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
         ]);
 
-        // IMAGE UPLOAD
         $imagePath = null;
         if ($request->hasFile('image')) {
             $imagePath = $request->file('image')->store('attractions', 'public');
@@ -65,9 +62,8 @@ class AttractionController extends Controller
             ->with('success', 'added');
     }
 
-    /**
-     * UPDATE ATTRACTION
-     */
+    // UPDATE ATTRACTION
+
     public function update(Request $request, Attraction $attraction)
     {
         $request->validate([
@@ -81,7 +77,7 @@ class AttractionController extends Controller
         // KEEP OLD IMAGE
         $imagePath = $attraction->image;
 
-        // NEW IMAGE UPLOAD (IF EXISTS)
+        // NEW IMAGE UPLOAD  
         if ($request->hasFile('image')) {
             $imagePath = $request->file('image')->store('attractions', 'public');
         }
@@ -105,9 +101,8 @@ class AttractionController extends Controller
             ->with('success', 'updated');
     }
 
-    /**
-     * DELETE ATTRACTION
-     */
+    // DELETE ATTRACTION
+
     public function destroy(Attraction $attraction)
     {
         $attraction->delete();

@@ -9,7 +9,7 @@ use App\Models\Category;
 
 class AdminDashboardController extends Controller
 {
-    // ===================== DASHBOARD =====================
+    // DASHBOARD  
     public function index()
     {
         return view('admin.dashboard', [

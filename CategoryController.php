@@ -14,6 +14,8 @@ class CategoryController extends Controller
         return view('admin.categories.index', compact('categories'));
     }
 
+    // ADD NEW CATEGORY
+
     public function store(Request $request)
     {
         $request->validate([
@@ -27,6 +29,8 @@ class CategoryController extends Controller
         return redirect()->route('admin.categories.index')->with('success', 'added');
     }
 
+    // UPDATE CATEGORY
+
     public function update(Request $request, Category $category)
     {
         $request->validate([
@@ -39,6 +43,8 @@ class CategoryController extends Controller
 
         return redirect()->route('admin.categories.index')->with('success', 'updated');
     }
+
+    // DELETE CATEGORY
 
     public function destroy(Category $category)
     {

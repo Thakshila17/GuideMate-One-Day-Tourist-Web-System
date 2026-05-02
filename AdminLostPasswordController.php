@@ -14,6 +14,8 @@ class AdminLostPasswordController extends Controller
         return view('auth.admin.reset-password');
     }
 
+    // UPDATE PASSWORD
+
     public function updatePassword(Request $request)
     {
         $request->validate([

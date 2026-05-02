@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Validator;
 
 class AuthController extends Controller
 {
-    // ===================== USER LOGIN =====================
+    // USER LOGIN  
     public function userLogin(Request $request)
     {
         $validator = Validator::make($request->all(), [
@@ -34,7 +34,7 @@ class AuthController extends Controller
         ], 'user')->withInput();
     }
 
-    // ===================== ADMIN LOGIN =====================
+    // ADMIN LOGIN 
     public function adminLogin(Request $request)
     {
         $validator = Validator::make($request->all(), [

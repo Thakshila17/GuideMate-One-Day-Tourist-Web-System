@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Hash;
 
 class UserAuthController extends Controller
 {
-    // REGISTER 
+    // USER REGISTER 
     public function register(Request $request)
     {
         $validated = $request->validate([
@@ -27,6 +27,6 @@ class UserAuthController extends Controller
         ]);
 
         return redirect()->route('login')
-            ->with('status', 'Registration successful! Please login.');
+            ->with('status', 'Registration Successful, Please Login!');
     }
 }

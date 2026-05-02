@@ -9,13 +9,12 @@ use App\Models\User;
 
 class UserLostPasswordController extends Controller
 {
-    // Show form
     public function showResetForm()
     {
         return view('auth.user.reset-password');
     }
 
-    // Update password
+    // UPDATE PASSWORD
     public function updatePassword(Request $request)
     {
         $request->validate([

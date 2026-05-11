@@ -11,7 +11,7 @@ use App\Models\Category;
 
 class UserDashboardController extends Controller
 {
-    // ===================== DASHBOARD =====================
+    // USER DASHBOARD  
     public function dashboard(Request $request)
     {
         $query = Attraction::with('category');
@@ -26,14 +26,14 @@ class UserDashboardController extends Controller
         return view('auth.user.dashboard', compact('attractions', 'categories'));
     }
 
-    // ===================== VIEW SINGLE PLACE =====================
+    // VIEW SINGLE PLACE  
     public function show($id)
     {
         $place = Attraction::findOrFail($id);
         return view('auth.user.attraction-details', compact('place'));
     }
 
-    //====================== PLACE CARD ====================
+    // PLACE CARD  
     public function index()
     {
         $attractions = Attraction::with('category')
@@ -43,7 +43,7 @@ class UserDashboardController extends Controller
         return view('user.attractions.index', compact('attractions'));
     }
 
-    // ===================== SAVE PLAN =====================
+    // SAVE PLAN  
     public function savePlan(Request $request)
     {
         try {
@@ -77,7 +77,7 @@ class UserDashboardController extends Controller
         }
     }
 
-    // ===================== VIEW PLANS =====================
+    // VIEW PLANS  
     public function plans()
     {
         $plans = Plan::where('user_id', Auth::id())
@@ -87,7 +87,7 @@ class UserDashboardController extends Controller
         return view('auth.user.savePlace', compact('plans'));
     }
 
-    // ===================== DELETE PLAN =====================
+    // DELETE PLAN 
     public function deletePlan($id)
     {
         $plan = Plan::where('id', $id)
@@ -98,7 +98,7 @@ class UserDashboardController extends Controller
 
         $plan->delete();
 
-        // Reorder only if it was in One Day Plan
+        // Reorder only in One Day Plan
         if ($wasOneDay) {
 
             $plans = Plan::where('user_id', Auth::id())
@@ -120,7 +120,7 @@ class UserDashboardController extends Controller
         ]);
     }
 
-    // ===================== ADD TO ONE DAY PLAN  =====================
+    // ADD TO ONE DAY PLAN   
     public function addToOneDayPlan(Request $request)
     {
         $placeId = $request->input('place_id');
@@ -129,7 +129,6 @@ class UserDashboardController extends Controller
             ->where('attraction_id', $placeId)
             ->firstOrFail();
 
-        // already added check
         $exists = Plan::where('user_id', Auth::id())
             ->where('attraction_id', $placeId)
             ->where('is_one_day', 1)
@@ -142,7 +141,6 @@ class UserDashboardController extends Controller
             ]);
         }
 
-        // get last order
         $lastOrder = Plan::where('user_id', Auth::id())
             ->where('is_one_day', 1)
             ->max('visit_order');
@@ -157,7 +155,7 @@ class UserDashboardController extends Controller
         ]);
     }
 
-    // ===================== SHOW ONE DAY PLAN =====================
+    // SHOW ONE DAY PLAN 
     public function showOneDayPlan()
     {
         $plans = Plan::where('user_id', Auth::id())
@@ -179,7 +177,7 @@ class UserDashboardController extends Controller
         return view('plan.oneDayPlan', compact('plans'));
     }
 
-    // ===================== UPDATE DRAG & DROP ORDER =====================
+    // UPDATE DRAG & DROP ORDER 
     public function updateOrder(Request $request)
     {
         $items = $request->input('items');
@@ -197,7 +195,7 @@ class UserDashboardController extends Controller
         ]);
     }
 
-    // ===================== SAVE ROUTE SESSION =====================
+    // SAVE ROUTE SESSION 
     public function saveRouteSession(Request $request)
     {
         $items = $request->input('items', []);
@@ -218,7 +216,7 @@ class UserDashboardController extends Controller
         ]);
     }
 
-    // ===================== SHOW GENERATED ROUTE PAGE =====================
+    // SHOW GENERATED ROUTE PAGE 
     public function showRoutePage()
     {
         $attractionIds = session('route_order', []);
@@ -252,7 +250,7 @@ class UserDashboardController extends Controller
     }
 
 
-    // ===================== LOGOUT =====================
+    // USER LOGOUT 
     public function logout(Request $request)
     {
         Auth::guard('web')->logout();

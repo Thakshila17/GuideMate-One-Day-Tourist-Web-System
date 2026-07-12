@@ -159,7 +159,7 @@ input:focus{
   text-decoration:underline;
 }
 
-/* SUCCESS MESSAGE */
+/* SUCCESS TOAST MESSAGE */
 .success-box{
   color:green;
   background:white;
@@ -169,7 +169,7 @@ input:focus{
   text-align:center;
 }
 
-/* ERROR MESSAGE */
+/* ERROR TOAST MESSAGE */
 .field-error{
   color:#f3a8a8e2;
   font-size:12px;
@@ -177,30 +177,4 @@ input:focus{
   font-style: italic;
 }
 
-/* MOBILE */
-@media (max-width: 500px){
-
-  .right-content h1{
-    font-size:36px;
-  }
-
-  .right-content h3{
-    font-size:18px;
-  }
-
-  .tagline{
-    font-size:14px;
-  }
-
-  .login-card{
-    padding:20px;
-  }
-
-  input{
-    padding:10px;
-  }
-
-  .btn{
-    padding:10px;
-  }
-}
+  

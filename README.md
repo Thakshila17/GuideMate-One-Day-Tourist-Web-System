@@ -1,121 +1,181 @@
- # GuideMate - One-Day Tourist Web System  
-### Travel Planning Web Application  
+# 🌍 GuideMate System
+
+## 📌 About the Project
+
+GuideMate is a web-based travel guide system designed to help users plan one-day trips efficiently. It allows users to explore attractions, view attraction details, save places, and generate routes with time and distance in a simple and user-friendly way.
 
 ---
 
-## 📖 Overview  
-GuideMate is a web-based travel planning system designed to help users plan one-day trips and manage travel-related information.  
-The system currently focuses on user authentication and dashboard management, with additional features under development.
+## 🎯 Key Features
+
+- 👤 User registration and login system
+- 🗺️ View and manage attractions
+- 📍 Save places & generate routes
+- 🛠️ Admin panel for system management
 
 ---
 
-## 🚀 Features  
+## ⚙️ Technologies Used
 
-### 🔐 Authentication System  
-- User registration  
-- User login  
-- Admin login  
-- Password reset functionality (User & Admin)  
-
----
-
-### 👤 User Module (In Progress)  
-- User dashboard  
-- Browse attractions & view details  
-- Plan one-day visit & generate route (basic structure implemented)  
-
----
-
-### 🛠 Admin Module (In Progress)  
-- Admin dashboard  
-- Manage attractions (Add, Edit, Update)  
-- Manage categories (Add, Edit, Update)  
-
----
-
-## 📸 Screenshots  
-
-### 🔐 Login Page
-<img src="screenshots/login-page.png" width="600"/>
-
-### 📝 User Registration Page  
-<img src="screenshots/register-page.png" width="600"/>
-
-### 👤 User Dashboard
-<img src="screenshots/user-dashboard.png" width="600"/>
-
-### 🛠 Admin Dashboard
-<img src="screenshots/admin-dashboard.png" width="600"/>
-
----
-
-## 📂 Project Structure  
-
-### Models  
-- User.php  
-- Admin.php  
-- Attraction.php  
-- Category.php  
-- Plan.php  
-
-### Controllers  
-- AuthController.php  
-- UserAuthController.php  
-- AdminDashboardController.php  
-- UserDashboardController.php  
-- AttractionController.php  
-- CategoryController.php  
-- Password Reset Controllers  
-
-### Views & Frontend  
-- login.blade.php  
-- user-register.blade.php  
-- reset-password.blade.php  
-- CSS & JavaScript files for UI and functionality  
-
----
-
-## 🛠 Technologies Used  
-- **Frontend:** HTML, CSS, JavaScript, Bootstrap  
-- **Backend:** PHP (Laravel)  
-- **Database:** MySQL  
+- **Backend:** PHP (Laravel Framework)
+- **Frontend:** HTML, CSS, JavaScript, Bootstrap
+- **Database:** MySQL
 - **Tools:** VS Code, XAMPP, OpenStreetMap, Leaflet
----
-
-## 📊 Project Status  
-🚧 This project is currently under development.
-
-### ✅ Completed  
-- Authentication system  
-- Basic structure for user and admin modules  
-
-### 🔄 In Progress  
-- Full dashboard functionality  (User & Admin)
-- Travel planning and route generation features  
 
 ---
 
-## ⚙️ Setup (Basic)  
+## 🛠️ Setup Instructions
+
+### 📌 Requirements
+
+Make sure you have the following installed:
+
+- XAMPP
+- PHP (version 8 or above recommended)
+- MySQL
+- Composer
+- Node.js & npm
+- Web browser (Chrome recommended)
+
+---
+
+### 📂 Project Setup
+
+1. Extract the project folder
+2. Copy the folder into:
+
+```
+C:\xampp\htdocs
+```
+
+3. Start:
+
+- Apache
+- MySQL
+
+---
+
+### 📦 Install Dependencies (IMPORTANT)
+
+To reduce file size, the `vendor` and `node_modules` folders are not included.
+
+Run the following commands inside the project folder:
 
 ```bash
-git clone https://github.com/your-username/guidemate.git
-cd guidemate
 composer install
+npm install
 ```
----
-
-## ⚠️ Note: This project is still under development. Full setup and configuration will be added after completion.
 
 ---
 
-## 🎯 Future Improvements
-- Mobile application version
-- AI based route optimization
-- User rating system
+### 🗄️ Database Setup
+
+1. Open phpMyAdmin
+
+```
+http://localhost/phpmyadmin
+```
+
+2. Create a new database:
+
+```
+guidemate_db
+```
+
+3. Import the database file:
+
+- Click the database
+- Go to **Import**
+- Select the `.sql` file
+- Click **Go**
 
 ---
 
-## 👩‍💻 Author
+### ⚙️ Configuration
 
-### Thakshila Maduwanthi
-🔗 GitHub: https://github.com/Thakshila17
+1. Open `.env` file
+
+2. Update database settings:
+
+```
+DB_DATABASE=guidemate_db
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+---
+
+### ▶️ Running the System
+
+1. Open terminal in project folder
+
+2. Run:
+
+```bash
+php artisan serve
+```
+
+3. Open browser and go to:
+
+```
+http://127.0.0.1:8000/login
+```
+
+---
+
+## 🔑 Login Details
+
+### 👤 User
+
+- Username: johnPerera
+- Password: john123
+
+### 🔐 Admin
+
+- Name: admin
+- Password: admin123
+
+---
+
+## ⚠️ Important Notes
+
+- The `vendor` and `node_modules` folders are excluded to reduce file size
+- Run the following commands before starting the project:
+
+```bash
+composer install
+npm install
+```
+
+- The `.git` folder has been removed as it is not required for running the system
+
+- The `storage` folder has been cleaned (logs, cache, and unnecessary files removed)
+
+- If images or uploaded files are not displaying, run:
+
+```bash
+php artisan storage:link
+```
+
+- Ensure your `.env` file is correctly configured before running the project
+
+- If any issue occurs, try clearing cache:
+
+```bash
+php artisan config:clear
+php artisan cache:clear
+```
+
+---
+
+## 📌 Project Status
+
+This system was developed as part of an academic project.
+
+---
+
+## 👨‍💻 Author
+
+**Senerath SPTM**
+**E2320536**
+**ITE2953 - Programming Group Project**

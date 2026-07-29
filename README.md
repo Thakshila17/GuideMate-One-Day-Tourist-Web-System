@@ -1,21 +1,21 @@
-# 🌍 GuideMate System
+# GuideMate Web System
 
-## 📌 About the Project
+## About the Project
 
-GuideMate is a web-based travel guide system designed to help users plan one-day trips efficiently. It allows users to explore attractions, view attraction details, save places, and generate routes with time and distance in a simple and user-friendly way.
-
----
-
-## 🎯 Key Features
-
-- 👤 User registration and login system
-- 🗺️ View and manage attractions
-- 📍 Save places & generate routes
-- 🛠️ Admin panel for system management
+GuideMate is a web-based travel guide system designed to help users plan one-day trips efficiently. It allows users to explore attractions, view attraction details, save places and generate routes with time and distance in a simple and user-friendly way.
 
 ---
 
-## ⚙️ Technologies Used
+## Key Features
+
+-  User registration, reset password and login system
+-  View and manage attractions
+-  Save places & generate routes
+-  Admin panel for system management
+
+---
+
+## Technologies Used
 
 - **Backend:** PHP (Laravel Framework)
 - **Frontend:** HTML, CSS, JavaScript, Bootstrap
@@ -24,9 +24,9 @@ GuideMate is a web-based travel guide system designed to help users plan one-day
 
 ---
 
-## 🛠️ Setup Instructions
+## Setup Instructions
 
-### 📌 Requirements
+### Requirements
 
 Make sure you have the following installed:
 
@@ -39,7 +39,7 @@ Make sure you have the following installed:
 
 ---
 
-### 📂 Project Setup
+### Project Setup
 
 1. Extract the project folder
 2. Copy the folder into:
@@ -48,14 +48,14 @@ Make sure you have the following installed:
 C:\xampp\htdocs
 ```
 
-3. Start:
+3. Start in XAMPP
 
 - Apache
 - MySQL
 
 ---
 
-### 📦 Install Dependencies (IMPORTANT)
+### Install Dependencies (IMPORTANT)
 
 To reduce file size, the `vendor` and `node_modules` folders are not included.
 
@@ -68,7 +68,7 @@ npm install
 
 ---
 
-### 🗄️ Database Setup
+### Database Setup
 
 1. Open phpMyAdmin
 
@@ -91,7 +91,7 @@ guidemate_db
 
 ---
 
-### ⚙️ Configuration
+### Configuration
 
 1. Open `.env` file
 
@@ -105,7 +105,7 @@ DB_PASSWORD=
 
 ---
 
-### ▶️ Running the System
+### Running the System
 
 1. Open terminal in project folder
 
@@ -123,17 +123,12 @@ http://127.0.0.1:8000/login
 
 ---
 
-## 🔑 Login Details
+## To Login:
 
-### 👤 User
+### 👤 User & 🔐 Admin
 
-- Username: johnPerera
-- Password: john123
-
-### 🔐 Admin
-
-- Name: admin
-- Password: admin123
+- 1- Sign Up
+- 2- Sign In
 
 ---
 
@@ -168,7 +163,7 @@ php artisan cache:clear
 
 ---
 
-## 📌 Project Status
+## Project Status
 
 This system was developed as part of an academic project.
 
@@ -176,6 +171,4 @@ This system was developed as part of an academic project.
 
 ## 👨‍💻 Author
 
-**Senerath SPTM**
-**E2320536**
-**ITE2953 - Programming Group Project**
+**Thakshila Maduwanthi**

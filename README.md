@@ -23,7 +23,13 @@ GuideMate is a web-based travel guide system designed to help users plan one-day
 - **Tools:** VS Code, XAMPP, OpenStreetMap, Leaflet
 
 ---
+## 📸 Screenshots
+screenshots/login-page.png
+screenshots/user-dashboard.png
+screenshots/admin-dashboard.png
+screenshots/route-page.png
 
+---
 ## Setup Instructions
 
 ### Requirements

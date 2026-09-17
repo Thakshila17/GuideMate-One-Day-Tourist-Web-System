@@ -24,8 +24,8 @@ GuideMate is a web-based travel guide system designed to help users plan one-day
 
 ---
 ## 📸 Screenshots
-<img src="screenshots/login-page.png" alt="login-page" width="300"> <img src="screenshots/user-dashboard.png" alt="user-dashboard" width="300">
-<img src="screenshots/admin-dashboard.png" alt="admin-dashboard" width="300"> <img src="screenshots/route-page.png" alt="route-navigation" width="300">
+<img src="screenshots/login-page.png" alt="login-page" width="400"> <img src="screenshots/user-dashboard.png" alt="user-dashboard" width="400">
+<img src="screenshots/admin-dashboard.png" alt="admin-dashboard" width="400"> <img src="screenshots/route-page.png" alt="route-navigation" width="400">
 
 ---
 ## Setup Instructions

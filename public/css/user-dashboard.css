@@ -22,7 +22,7 @@
     --green-pale:    #b7e4c7;
 
     --bg-dark:       #19291e;
-    --bg-card:       rgba(41, 133, 67, 0.82);
+    --bg-card:       rgba(57, 124, 76, 0.82);
     --bg-card-hover: rgba(55, 102, 74, 0.92);
     --bg-glass:      rgba(255,255,255,0.05);
     --bg-glass-border: rgba(255,255,255,0.09);
@@ -49,7 +49,7 @@ body {
     background:
         radial-gradient(ellipse at 15% 10%, rgba(45,106,79,0.2) 0%, transparent 55%),
         radial-gradient(ellipse at 85% 88%, rgba(26,61,43,0.22) 0%, transparent 55%),
-        linear-gradient(160deg, #1c2e22 0%, #19291e 50%, #182419 100%);
+        linear-gradient(160deg, #d8f9e3 0%, #98dbae 50%, #337333fc 100%);
     min-height: 100vh;
     color: var(--text-primary);
 }
@@ -154,9 +154,8 @@ body {
 }
 
 .sidebar a:hover {
-    background: rgba(64,145,108,0.12);
+    background: rgba(64, 145, 109, 0.18);
     color: #fff;
-    transform: translateX(4px);
 }
 
 .sidebar a.active {
@@ -210,7 +209,7 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(226, 249, 238, 0.88);
+    background: rgba(208, 249, 229, 0.88);
     backdrop-filter: blur(16px);
     border-bottom: 1px solid var(--bg-glass-border);
     padding: 14px 28px;
@@ -339,10 +338,10 @@ hr {
 .all-btn,
 .category-btn {
     padding: 8px 20px;
-    border-radius: 30px;
-    border: 1px solid var(--bg-glass-border);
+    border-radius: var(--radius-xl);
+    border: 2px solid rgb(64, 145, 109);
     cursor: pointer;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500;
     font-family: 'DM Sans', sans-serif;
     letter-spacing: 0.2px;
@@ -351,19 +350,12 @@ hr {
     color: black;
 }
 
-.all-btn {
-    background: linear-gradient(135deg, var(--green-mid), var(--green-accent));
-    color: #fff;
-    border-color: transparent;
-    box-shadow: 0 4px 14px rgba(45,106,79,0.3);
-}
-
 .all-btn:hover,
 .category-btn:hover {
     transform: translateY(-2px);
     color: var(--text-muted);
     border-color: rgba(64,145,108,0.35);
-    background: rgba(64,145,108,0.15);
+    background: rgba(142, 223, 156, 0.295);
     box-shadow: 0 4px 14px rgba(0,0,0,0.2);
 }
 
@@ -372,7 +364,8 @@ hr {
     background: linear-gradient(135deg, var(--green-deep), var(--green-mid)) !important;
     color: #fff !important;
     border-color: transparent !important;
-    box-shadow: 0 4px 16px rgba(45,106,79,0.4) !important;
+    border-radius: var(--radius-sm) !important;
+    box-shadow: 0 4px 14px rgba(45,106,79,0.4) !important;
 }
 
 /*  PLACES GRID */
@@ -447,7 +440,7 @@ hr {
     position: fixed;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    background: rgba(0,0,0,0.72);
+    background: rgba(15, 15, 15, 0.72);
     backdrop-filter: blur(6px);
     z-index: 9999;
     justify-content: center;
@@ -475,7 +468,7 @@ hr {
 
 .modal-content::-webkit-scrollbar { width: 5px; }
 .modal-content::-webkit-scrollbar-track { background: transparent; }
-.modal-content::-webkit-scrollbar-thumb { background: rgba(64,145,108,0.3); border-radius: 8px; }
+.modal-content::-webkit-scrollbar-thumb { background: rgba(131, 243, 192, 0.3); border-radius: 8px; }
 
 /*  MODAL IMAGE  */
 .modal-img {
@@ -514,7 +507,7 @@ hr {
 }
 
 .info-box {
-    background: rgba(64,145,108,0.08);
+    background: rgba(64, 145, 109, 0.148);
     border: 1px solid rgba(64,145,108,0.15);
     padding: 14px;
     border-radius: var(--radius-md);

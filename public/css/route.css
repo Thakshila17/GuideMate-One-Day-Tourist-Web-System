@@ -6,12 +6,12 @@
     --green-mid:     #2d6a4f;
     --green-bright:  #40916c;
     --green-accent:  #52b788;
-    --green-pale:    #b7e4c7;
+    --green-pale:    #c5f1d4;
     --orange:        #e67e22;
 
     --bg-dark:       #223829;
     --bg-card:       rgba(38, 64, 46, 0.88);
-    --bg-sidebar:    rgba(159, 223, 182, 0.984);
+    --bg-sidebar:    rgba(204, 250, 220, 0.984);
     --bg-glass:      rgba(255,255,255,0.05);
     --bg-glass-border: rgba(255,255,255,0.09);
 
@@ -204,7 +204,7 @@ body, html {
     width: 300px;
     min-width: 240px;
     background: var(--bg-sidebar);
-    border-right: 1px solid var(--bg-glass-border);
+    border-right: 2px solid rgba(180, 177, 177, 0.735);
     display: flex;
     flex-direction: column;
     overflow: hidden;

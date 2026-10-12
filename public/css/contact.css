@@ -39,7 +39,7 @@ body, html {
     background:
         radial-gradient(ellipse at 15% 10%, rgba(45,106,79,0.2) 0%, transparent 55%),
         radial-gradient(ellipse at 85% 88%, rgba(26,61,43,0.22) 0%, transparent 55%),
-        linear-gradient(160deg, #1c2e22 0%, #223829 50%, #182419 100%);
+        linear-gradient(160deg, #d8f9e3 0%, #98dbae 50%, #337333fc 100%);
     font-family: 'DM Sans', sans-serif;
     color: var(--text-primary);
 }

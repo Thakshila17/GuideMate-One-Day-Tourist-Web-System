@@ -11,7 +11,7 @@
 
     --bg-dark:       #223829;
     --bg-card:       rgba(38, 64, 46, 0.88);
-    --bg-sidebar:    rgba(26, 48, 34, 0.97);
+    --bg-sidebar:    rgba(159, 223, 182, 0.984);
     --bg-glass:      rgba(255,255,255,0.05);
     --bg-glass-border: rgba(255,255,255,0.09);
 
@@ -227,15 +227,15 @@ body, html {
     font-family: 'Playfair Display', serif;
     font-size: 16px;
     font-weight: 600;
-    color: var(--text-primary);
+    color: black;
     margin: 0 0 12px;
     padding-bottom: 10px;
-    border-bottom: 1px solid var(--bg-glass-border);
+    border-bottom: 1px solid var(--bg-dark);
 }
 
 /*  STOP LIST  */
 .stop-list {
-    list-style: none;
+    list-style:none;
     padding: 0;
     margin: 0 0 16px;
 }
@@ -245,7 +245,7 @@ body, html {
     align-items: flex-start;
     gap: 10px;
     padding: 9px 8px;
-    border-bottom: 1px solid rgba(255,255,255,0.04);
+    border-bottom: 1px solid rgba(146, 146, 146, 0.514);
     font-size: 13px;
     color: var(--text-secondary);
     cursor: pointer;
@@ -282,7 +282,7 @@ body, html {
 
 .stop-num.start-num { background: var(--orange); }
 
-.stop-name { font-weight: 500; display: block; color: var(--text-primary); }
+.stop-name { font-weight: 500; display: block; color: black; }
 .stop-loc  { font-size: 12px; color: var(--text-muted); display: block; margin-top: 1px; }
 
 /*  ROUTE SUMMARY  */

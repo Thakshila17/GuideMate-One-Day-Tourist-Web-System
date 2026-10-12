@@ -39,11 +39,13 @@
                     class="{{ request()->is('plan/one-day-plan') ? 'active' : '' }}">Plan One-Day
                     Visit</a>
 
-                <a href="{{ route('plan.generate-route') }}"
-                    class="{{ request()->is('plan/generate-route') ? 'active' : '' }}">Generate
-                    Route</a>
+                <a href="{{ route('plan.generate-route') }}" class="{{ request()->is('plan/route') ? 'active' : '' }}">
+                    Generate Route
+                </a>
 
-                <a href="{{ route('contact') }}">Contact Us</a>
+                <a href="{{ route('contact') }}" class="{{ request()->is('contact') ? 'active' : '' }}">
+                    Contact Us
+                </a>
 
             </nav>
 

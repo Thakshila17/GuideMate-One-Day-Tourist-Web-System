@@ -48,7 +48,7 @@
 body {
     background:
         radial-gradient(ellipse at 20% 10%, rgba(45,106,79,0.8) 0%, transparent 55%), 
-        linear-gradient(160deg, #204333 0%, #234835 50%, #080f0b 100%);
+        linear-gradient(160deg, #d8f9e3 0%, #98dbae 50%, #337333fc 100%);
     min-height: 100vh;
     color: var(--text-primary);
 }
@@ -362,7 +362,7 @@ h2 {
     font-family: 'Playfair Display', serif;
     font-size: 28px;
     font-weight: 700;
-    color: var(--text-primary);
+    color: black;
     letter-spacing: -0.3px;
 }
 
@@ -374,7 +374,7 @@ h2 {
     padding: 12px 24px;
     background: linear-gradient(135deg, var(--green-mid), var(--green-accent));
     border-radius: var(--radius-sm);
-    color: #fff;
+    color: white;
     font-size: 14px;
     font-weight: 600;
     border: none;

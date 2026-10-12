@@ -116,7 +116,6 @@ body {
 .plan-row:hover {
     border-color: rgba(64,145,108,0.25);
     background: rgba(26,50,36,0.88);
-    transform: translateY(-2px);
     box-shadow: var(--shadow-card), 0 0 28px rgba(64,145,108,0.1);
 }
 

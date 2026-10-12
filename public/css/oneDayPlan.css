@@ -216,7 +216,7 @@ body {
     transition: var(--transition);
     min-width: 100px;
     text-align: center;
-    background: rgba(224,82,82,0.1);
+    background: rgba(224, 82, 82, 0.217);
     color: var(--red);
 }
 
